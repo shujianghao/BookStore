@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>个人资料</title>
+
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+		<link href="../css/personal.css" rel="stylesheet" type="text/css">
+		<link href="../css/infstyle.css" rel="stylesheet" type="text/css">
+		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>			
+	</head>
+
+	<body>
+		<!--头 -->
+		<header>
+			<article>
+				<div class="mt-logo">
+					<!--顶部导航条 -->
+					<div class="am-container header">
+						<ul class="message-r">
+							<div class="topMessage home">
+								<div class="menu-hd"><a href="#" target="_top" class="h">商城首页</a></div>
+							</div>
+							<div class="topMessage my-shangcheng">
+								<div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
+							</div>
+							<div class="topMessage mini-cart">
+								<div class="menu-hd"><a id="mc-menu-hd" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span></a></div>
+							</div>
+						</ul>
+						</div>
+
+						<!--悬浮搜索框-->
+
+						<div class="nav white">
+							<div class="logoBig">
+					            <li><img src="../images/logo_sdname02.jpg" height="80px" width="auto" /></li>
+				            </div>
+
+							<div class="search-bar pr">
+								<a name="index_none_header_sysc" href="#"></a>
+								<form>
+									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="搜索" autocomplete="off">
+									<input id="ai-topsearch" class="submit am-btn" value="搜索" index="1" type="submit">
+								</form>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+				</div>
+			</article>
+		</header>
+            <div class="nav-table">
+					   <div class="long-title"><span class="all-goods">全部分类</span></div>
+					   <div class="nav-cont">
+							<ul>
+								<li class="index"><a href="#">首页</a></li>
+                                <li class="qc"><a href="#">文学</a></li>
+                                <li class="qc"><a href="#">社科</a></li>
+                                <li class="qc"><a href="#">少儿</a></li>
+                                <li class="qc last"><a href="#">艺术</a></li>
+							</ul>
+						</div>
+			</div>
+			<b class="line"></b>
+		<div class="center">
+			<div class="col-main">
+				<div class="main-wrap">
+
+					<div class="user-info">
+						<!--标题 -->
+						<div class="am-cf am-padding">
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">个人资料</strong> / <small>Personal&nbsp;information</small></div>
+						</div>
+						<hr/>
+
+						<!--个人信息 -->
+						<div class="info-main">
+							<form class="am-form am-form-horizontal">
+
+								<div class="am-form-group">
+									<label for="user-name" class="am-form-label">用户名</label>
+									<div class="am-form-content">
+										<input type="text" id="user-name2" placeholder="name">
+                                         
+									</div>
+								</div>
+
+								<div class="am-form-group">
+									<label class="am-form-label">性别</label>
+									<div class="am-form-content sex">
+										<label class="am-radio-inline">
+											<input type="radio" name="radio10" value="male" data-am-ucheck> 男
+										</label>
+										<label class="am-radio-inline">
+											<input type="radio" name="radio10" value="female" data-am-ucheck> 女
+										</label>
+									</div>
+								</div>
+
+								<div class="am-form-group">
+									<label for="user-birth" class="am-form-label">生日</label>
+									<div class="am-form-content birth">
+										<div class="birth-select">
+											<select data-am-selected>
+												<option value="a">2015</option>
+												<option value="b">1987</option>
+											</select>
+											<em>年</em>
+										</div>
+										<div class="birth-select2">
+											<select data-am-selected>
+												<option value="a">12</option>
+												<option value="b">8</option>
+											</select>
+											<em>月</em></div>
+										<div class="birth-select2">
+											<select data-am-selected>
+												<option value="a">21</option>
+												<option value="b">23</option>
+											</select>
+											<em>日</em></div>
+									</div>
+							
+								</div>
+								<div class="am-form-group">
+									<label for="user-phone" class="am-form-label">电话</label>
+									<div class="am-form-content">
+										<input id="user-phone" placeholder="telephonenumber" type="tel">
+
+									</div>
+								</div>
+								<div class="am-form-group">
+									<label for="user-email" class="am-form-label">电子邮件</label>
+									<div class="am-form-content">
+										<input id="user-email" placeholder="Email" type="email">
+
+									</div>
+								</div>
+										<div class="am-form-group">
+											<label for="user-address" class="am-form-label">所在地</label>
+											<div class="am-form-content address">
+												<select data-am-selected>
+													<option value="a">浙江省</option>
+													<option value="b" selected>湖北省</option>
+												</select>
+												<select data-am-selected>
+													<option value="a">温州市</option>
+													<option value="b" selected>武汉市</option>
+												</select>
+												<select data-am-selected>
+													<option value="a">瑞安区</option>
+													<option value="b" selected>洪山区</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="am-form-group">
+											<label for="user-intro" class="am-form-label">详细地址</label>
+											<div class="am-form-content">
+												<textarea class="" rows="3" id="user-intro" placeholder="输入详细地址"></textarea>
+											</div>
+										</div>
+								<div class="info-btn">
+									<div class="am-btn am-btn-danger">保存修改</div>
+								</div>
+
+							</form>
+						</div>
+
+					</div>
+
+				</div>
+				<!--底部-->
+				<div class="footer">
+					<div class="footer-bd">
+						<p>
+							<em>&nbsp;&nbsp;&nbsp;&nbsp;计算机161班XXX小组制作&nbsp;&nbsp;&nbsp;我们的联系方式为：aaaaaa****@jk161.com</em>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<aside class="menu">
+				<ul>
+					<li class="person active">
+						<a href="index.html"><i class="am-icon-user"></i>个人中心</a>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-newspaper-o"></i>个人资料</p>
+						<ul>
+							<li> <a href="information.html">个人信息</a></li>
+							<li> <a href="password.html">修改密码</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-balance-scale"></i>我的交易</p>
+						<ul>
+							<li><a href="order.html">订单管理</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</aside>
+		</div>
+
+	</body>
+
+</html>
